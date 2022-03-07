@@ -1,0 +1,178 @@
+/* FONTS  */
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+p, a, .btn, .navContentColor {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Spacing between each nav element  */
+.nav-item {
+    padding-left: 1.2rem;
+}
+
+.ms-auto {
+    margin-right: 4rem;
+}
+
+/* Both h2 heads of latest news posts and instagram being centered and padded  */
+.h2head {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Font size of both slide in p element content  */
+.paraSizing {
+    font-size: 1.6rem;
+}
+
+
+/* The bolt logo on the navbar size made smaller and added left padding to push it towards the right from the left of the screen */
+.navbar-brand img {
+    height: 70px;
+    padding-left: 5rem;
+}
+
+/* The images in the carousel made to be of the same width and height */
+.carousel-item img {
+    width: auto;
+    height: 565px;
+    max-height: 565px;
+    object-fit: cover;
+}
+
+/* Custom background color for navigation bar. Removed bg-dark from the <nav> element */
+.navBg {
+    background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(87, 86, 86, 0.945) 100%);;
+    /* background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%); */
+}
+
+/* Custom content text color for navigation bar. Removed navbar-dark from the <nav> element. Added custom class in <a> for all content links of navbar */
+.navContentColor {
+    color: white;
+
+}
+
+/* This is the custom class that will be added on scroll to the navbar. It includes the background color and the text color. */
+.navbarScrollEffect {
+    background: rgb(248, 248, 248);
+    box-shadow: 0 8px 15px 5px rgba(0,0,0,0.25);
+}
+/* This is the subsection of the above part where the contents of the navbar change text color to black
+when the above navbarScrollEffect is added on scroll. */
+.navbarScrollEffect .nav-link {
+    color: black;
+}
+
+
+/* Footer Related Customizations */
+
+.footer-container {
+    background-color: rgb(36, 34, 34);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer ul {
+    list-style-type: none;   
+}
+
+
+footer p {
+    color: white;
+    margin-bottom: 0.9375rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;   
+}
+
+footer img {
+    height: 70px;
+    margin-right: 1.5rem;
+}
+
+.iconDiv {
+    padding-left: 2.5rem;
+    color: white;
+}
+
+footer i {
+    margin-left: 1rem;
+}
+
+/* Grid Related Customisations Slide In part  */
+
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.div-content1 {
+    text-align: center;
+    align-self: center;
+}
+
+/* Slide in animation related CSS for the part after the carousel  */
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: 
+        opacity 400ms ease-in, 
+        transform 600ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* Grid related customisations for the Latest News Posts Part  */
+.col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LNP Section Normal to dark overlay on hover  */
+.lnpPic:hover {
+    transition: filter 0.25s;
+    filter: brightness(50%);
+}
+
+
+
+/* Instagram section greyscale to color pictures  */
+
+.insPic {
+    filter: grayscale(100%);
+    height: auto;
+    width: 100%;
+    transition: filter 0.25s;
+}
+
+.insPic:hover {
+    filter: grayscale(0%);
+}
+
+
